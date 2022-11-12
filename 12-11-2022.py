@@ -55,34 +55,96 @@
 # print(kolekcja)
 
 
-zero =  ["  xx  ",
-         " x  x ",
-         "x    x",
-         "x    x",
-         "x    x",
-         " x  x ",
-         "  xx  "]
-for i in zero:
-    print(i)
+# zero =  ["  xx  ",
+#          " x  x ",
+#          "x    x",
+#          "x    x",
+#          "x    x",
+#          " x  x ",
+#          "  xx  "]
+# for i in zero:
+#     print(i)
 
 
-jeden = ["    xx",
-         "   xxx",
-         "  x xx ",
-         "    xx ",
-         "    xx ",
-         "    xx ",
-         "   xxxx"]
-for i in jeden:
-    print(i)
+# jeden = ["    xx ",
+#          "   xxx ",
+#          "  x xx ",
+#          "    xx ",
+#          "    xx ",
+#          "    xx ",
+#          "   xxxx"]
 
 
-for i in range(7):
-    tekst=zero[i]+" "+jeden[i]
-    print(tekst)
+# a = input("podaj liczbe: ")
+# for i in range(len(a)):
+#     if a[i] == "1":
+#         tekst += jeden[j]    
 
 
-a = input("podaj liczbe: ")
-for i in range(len(a)):
-    if a[i] == "1":
-        tekst += jeden[j]
+l0 = ["###",
+      "# #",
+      "# #",
+      "# #",
+      "###"]
+
+l1 = [" # ",
+      "## ",
+      " # ",
+      " # ",
+      "###"]
+
+l2 = ["###",
+      "  #",
+      "###",
+      "#  ",
+      "###"]
+
+l3 = ["###",
+      "  #",
+      " ##",
+      "  #",
+      "###"]
+
+l4 = ["# #",
+      "# #",
+      "###",
+      "  #",
+      "  #"]
+
+l5 = ["###",
+      "#  ",
+      "###",
+      "  #",
+      "###"]
+
+l6 = ["###",
+      "#  ",
+      "###",
+      "# #",
+      "###"]
+
+l7 = ["###",
+      "  #",
+      "  #",
+      "  #",
+      "  #"]
+
+l8 = ["###",
+      "# #",
+      "###",
+      "# #",
+      "###"]
+
+l9 = ["###",
+      "# #",
+      "###",
+      "  #",
+      "###"]
+
+liczba = input("podaj wartość: ")
+for i in range(5):
+    tekst = ''
+    for j in range(len(liczba)):
+        if liczba[j] == '0':
+            tekst += str(l0)
+print(tekst)
