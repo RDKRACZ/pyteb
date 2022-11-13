@@ -51,6 +51,16 @@ while True:
     print("x - wyjscie")
     print("p - ilosc piatek")
     print("n - najwyzsza ocena")
-    
+    a = input("Twoje działanie: ")
+    if a == 'i':
+        uczen1.info()
+    if a == 'x':
+        break
+    if a == 'p':
+        print(uczen1.ilePiatek())
+    if a == 'n':
+        print(uczen1.najwiekszaOcena())
+    input()
+	
 
 # uczen1.info()
