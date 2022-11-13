@@ -25,13 +25,10 @@ class Uczen:
     def info(self):
         print(self.imie + " " + self.nazw)
         print("matematyka:", end = ' ')
-        for i in self.ocenyMat:
+        for i in self.ocenyMat: # WERSJA 1
             print(i, end= ", ")
         print()
-        print("informatyka:", end = ' ')
-        for i in self.ocenyInf:
-            print(i, end= ", ")
-        print()
+        print("informatyka: " + str(self.ocenyInf)[1:-1]) # WERSJA 2
         print("historia:", end = ' ')
         for i in self.ocenyHis:
             print(i, end= ", ")
@@ -48,4 +45,12 @@ uczen1.ocenyInf=[5,2,1,4,5]
 # print(uczen2.srednia())
 # print(uczen2.najwiekszaOcena())
 # print(uczen1.ilePiatek())
-uczen1.info()
+
+while True:
+    print("i - informacje")
+    print("x - wyjscie")
+    print("p - ilosc piatek")
+    print("n - najwyzsza ocena")
+    
+
+# uczen1.info()
